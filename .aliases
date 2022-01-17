@@ -4,10 +4,10 @@ function cdup() {
 }
 alias 'cd..'='cdup'
 
-if [[ -d "/mnt/c/Users/sgdon ]]; then
+if [[ -d "/mnt/c/Users/sgdon" ]]; then
     alias 'goWin'='cd /mnt/c/Users/sgdon'
 fi
 
-if [[ -d "/mnt/c/Users/sgdon/Source" ]]'  then
+if [[ -d "/mnt/c/Users/sgdon/Source" ]];  then
     alias 'goSource'='cd /mnt/c/Users/sgdon/Source'
 fi
