@@ -1,7 +1,13 @@
+#!/bin/sh
 function cdup() {
   cd $(printf "%0.s../" $(seq 1 $1 ));
 }
 alias 'cd..'='cdup'
 
-alias 'goWin'='cd /mnt/c/Users/sgdon'
-alias 'goSource'='cd /mnt/c/Users/sgdon/Source'
+if [[ -d "/mnt/c/Users/sgdon ]]; then
+    alias 'goWin'='cd /mnt/c/Users/sgdon'
+fi
+
+if [[ -d "/mnt/c/Users/sgdon/Source" ]]'  then
+    alias 'goSource'='cd /mnt/c/Users/sgdon/Source'
+fi
